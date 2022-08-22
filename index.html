@@ -5,18 +5,46 @@
   <body>
     <div id="demo"></div>
     <div id="test"></div>
-    <hr>
+    <hr />
     <button onclick="alert('hi babe !')">Hiiii!</button>
-    <button onclick="document.getElementById('test').innerHTML = 'Byeee'">Byee!</button>
-    <button onclick="document.write('This is power of Godddd')">Pls Click Me!</button>
-    <!-- This script has been copy to file _statement.js 
-      <script>
-      document.getElementById("demo").innerHTML = "Function getElementByID";
-      document.write("function document.write");
-      // window.alert("funcotion window alert");
-      // alert("function alert");
-      console.log("My text for console");
-    </script> -->
+    <button onclick="document.getElementById('test').innerHTML = 'Byeee'">
+      Byee!
+    </button>
+    <button onclick="document.write('This is power of Godd')">
+      Pls Click Me!
+    </button>
+    <hr>
+    <button onclick="alert(sum)">Sum 2, 9 </button>
+    <button onclick="alert(string1)">DataType: String </button>
+    <button onclick="alert(array1)">DataType: Array </button>
+    <hr>
+    <button onclick="alert(object1.fName)">DataType: Object - First name </button>
+    <button onclick="alert(object1.lName)">DataType: Object - Last name </button>
+    <button onclick="alert(object1.age)">DataType: Object - Age</button>
+    <script>
+      var number1 = 9;
+      var number2 = 2;
+      var sum = number1 + number2;
+      var string1 = "test message !!!";
+      var array1 = [
+        "Elyas", "Hesari"
+      ];
+      console.log(array1);
+      var object1 = {
+        "fName" : "Elyas",
+        "lName" : "Hesari",
+        "age" : 25,
+      }
+      console.log(object1);
+      console.log(typeof object1);
+
+
+      // document.getElementById("demo").innerHTML = "Function getElementByID";
+      // document.write("function document.write");
+      // // window.alert("funcotion window alert");
+      // // alert("function alert");
+      // console.log("My text for console");
+    </script>
     <script src="./_statement.js"></script>
   </body>
 </html>
