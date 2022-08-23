@@ -2,35 +2,21 @@
   <head>
     <title>Learn JavaScript Vanilla</title>
   </head>
-  <body>
-    <div id="demo"></div>
-    <div id="test"></div>
-    <hr />
-    <button onclick="alert('hi babe !')">Hiiii!</button>
-    <button onclick="document.getElementById('test').innerHTML = 'Byeee'">
-      Byee!
-    </button>
-    <button onclick="document.write('This is power of Godd')">
-      Pls Click Me!
-    </button>
-    <hr />
-    <button onclick="alert(sum)">Sum 2, 9</button>
-    <button onclick="alert(string1)">DataType: String</button>
-    <button onclick="alert(array1)">DataType: Array</button>
-    <hr />
-    <button onclick="alert(object1.fName)">
-      DataType: Object - First name
-    </button>
-    <button onclick="alert(object1.lName)">DataType: Object - Last name</button>
-    <button onclick="alert(object1.age)">DataType: Object - Age</button>
+  <body style="text-align: center;">
+    <h1>Learn JavaScript</h1>
+    <hr>
+    <h2>Testing function declaration</h2>
+    <br>
+    <h3>type 1: with Event</h3>
+    <button onclick="evenorodd()">Even or Odd </button>
     <script>
-      // Function Login admin
-      var username = prompt("Pls enter your username");
-      var password;
-      username === "Admin" ? ((password = prompt("Pls enter your password")) === "theMaster")
-      ? alert("Your welcome!") : alert("Your passwoord is wrong.")
-      :
-      alert("I don't know U");
+      // function diagnosis among Even number or Odd number
+      var num = prompt("What is your number?")
+      function evenorodd(num) {
+        num % 2 == 0 ? alert("Your number is Even.") : 
+        alert("Your number is Odd");
+      }
+      
     </script>
     <script src="./_statement.js"></script>
   </body>
