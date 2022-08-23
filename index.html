@@ -24,39 +24,13 @@
     <button onclick="alert(object1.lName)">DataType: Object - Last name</button>
     <button onclick="alert(object1.age)">DataType: Object - Age</button>
     <script>
-
-      var age = prompt("Pls enter your age.");
-      // Expersion syntax if else or normal if
-      // if (age > 18){
-      //   alert("You can see the website :)");
-      // }else(alert("Excuse me, you cann't enter the website."));
-
-      //Expersion syntax ternary if
-      (age > 18) ? alert("You can see the website :)") :
-       alert("Excuse me, you cann't enter the website.");
-
-
-      // 1 && alert("This is true");
-      // 0 && alert("This is false");
-      // var number1 = 9;
-      // var number2 = 2;
-      // var sum = number1 + number2;
-      // var string1 = "test message !!!";
-      // var array1 = ["Elyas", "Hesari"];
-      // console.log(array1);
-      // var object1 = {
-      //   fName: "Elyas",
-      //   lName: "Hesari",
-      //   age: 26,
-      // };
-      // console.log(object1);
-      // console.log(typeof object1);
-
-      // document.getElementById("demo").innerHTML = "Function getElementByID";
-      // document.write("function document.write");
-      // // window.alert("funcotion window alert");
-      // // alert("function alert");
-      // console.log("My text for console");
+      // Function Login admin
+      var username = prompt("Pls enter your username");
+      var password;
+      username === "Admin" ? ((password = prompt("Pls enter your password")) === "theMaster")
+      ? alert("Your welcome!") : alert("Your passwoord is wrong.")
+      :
+      alert("I don't know U");
     </script>
     <script src="./_statement.js"></script>
   </body>
