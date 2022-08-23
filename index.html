@@ -7,15 +7,15 @@
     <hr>
     <h2>Testing function declaration</h2>
     <br>
-    <h3>type 1: with Event</h3>
-    <button onclick="evenorodd()">Even or Odd </button>
+    <h3>type 2: invoke from JS code </h3>
+    <br>
     <script>
-      // function diagnosis among Even number or Odd number
-      var num = prompt("What is your number?")
-      function evenorodd(num) {
-        num % 2 == 0 ? alert("Your number is Even.") : 
-        alert("Your number is Odd");
+      // function sum among two number
+      function sum(num1 , num2) {
+        return num1 + num2 ;
       }
+      var result = sum(2 , 9)
+      alert(result);
       
     </script>
     <script src="./_statement.js"></script>
