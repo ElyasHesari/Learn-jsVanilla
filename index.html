@@ -1,52 +1,12 @@
 <html>
   <head>
     <title>Learn JavaScript Vanilla</title>
-    <style>
-      .button {
-        background-color: #4caf50; /* Green */
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-      }
-      .button2 {
-        background-color: white;
-        color: black;
-        border: 2px solid #008cba;
-      }
-
-      .button2:hover {
-        background-color: #008cba;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="./_style.css">
   </head>
-  <body style="text-align: center">
+  <body>
     <h1>Learn JavaScript</h1>
     <hr />
-    <!-- Intro event onclick() -->
-    <button onclick="testClick(event)" class="button button2">Click me</button>
-    <script>
-      //function Event Onclick()
-      function testClick(event) {
-        console.log(9);
-        console.log(event);
-        if (event.ctrlKey) {
-          alert("hi boss");
-        } else if (event.altKey) {
-          alert("hi co-worker");
-        } else if (event.shiftKey) {
-          alert("hi babe");
-        } else {
-          alert("hiii");
-        }
-      }
-    </script>
+    <div onmouseover="testMouseOver(event)" onmouseout="testMouseOut(event)"></div>
+    <script src="./_statement.js"></script>
   </body>
 </html>
