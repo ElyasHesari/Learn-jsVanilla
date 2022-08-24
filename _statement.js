@@ -1,6 +1,8 @@
-function testMouseOver(event){
-    event.target.innerHTML = "hi";
+function testKeyDown(event){
+    console.log(event);
+    // event.target.value = "";
+    event.target.value = persianChar[event.keyCode];
 }
-function testMouseOut(event){
-    event.target.innerHTML = "bye";
+var persianChar = {
+    83 : "س" ,
 }
