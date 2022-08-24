@@ -5,19 +5,32 @@
   <body style="text-align: center;">
     <h1>Learn JavaScript</h1>
     <hr>
-    <h2>Testing function declaration</h2>
-    <br>
-    <h3>type 2: invoke from JS code </h3>
-    <br>
     <script>
-      // function sum among two number
-      function sum(num1 , num2) {
-        return num1 + num2 ;
-      }
-      var result = sum(2 , 9)
-      alert(result);
-      
+      //Intro function Number()
+      var testString = "11";
+      console.log(testString , typeof testString);
+      testString = Number(testString);
+      console.log(testString , typeof testString);
+
+      //Intro function parseInt()
+      var testNumber = "9.99";
+      console.log(testNumber, typeof testNumber);
+      testNumber = parseInt(testNumber);
+      console.log(testNumber, typeof testNumber);
+
+      //Intro function parseFloat()
+      var testNumber2 = "7.77";
+      console.log(testNumber2, typeof testNumber2);
+      testNumber2 = parseFloat(testNumber2);
+      console.log(testNumber2, typeof testNumber2);
+
+      // Intro Unary + Operator
+      var testNumber3 = "1";
+      console.log(testNumber3 , typeof testNumber3);
+      testNumber3 = + testNumber3;
+      console.log(testNumber3, typeof testNumber3);
+
     </script>
-    <script src="./_statement.js"></script>
+    
   </body>
 </html>
